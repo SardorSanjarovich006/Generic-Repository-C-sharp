@@ -4,10 +4,10 @@ using System.Text;
 
 namespace Repository.Models
 {
-    internal class Subject:IEntity
+    public class Subject:IEntity
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Grade {  get; set; }
+        public int GradeLevel { get; set; } 
     }
 }

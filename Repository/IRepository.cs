@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace Repository
 {
-    internal interface IRepository<T>where T : IEntity
+    public interface IRepository<T> where T : IEntity
     {
         List<T> GetAll();
         T Create(T value);
         T Update(T value);
-        T Delete(T value);
+        bool DeleteById(int id);
         T GetById(int id);
     }
 }

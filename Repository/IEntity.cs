@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Repository
+﻿namespace Repository
 {
-    internal interface IEntity
+    public interface IEntity
     {
-        public int Id { get; set; } 
+        int Id { get; set; }
     }
 }
